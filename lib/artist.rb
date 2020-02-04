@@ -10,7 +10,6 @@ class Artist
   end 
   def new_song(name, genre)
     made_song = Song.new(name, self, genre)
-    made_song.artist = self 
   end 
   def songs 
     Song.all.select  do |song|
