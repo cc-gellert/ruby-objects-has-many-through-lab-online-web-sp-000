@@ -20,7 +20,7 @@ class Patient
     drArr = [] 
     appointments.each do |appt| 
       if !(drArr.include?(appt.doctor))
-        drArr << dr 
+        drArr << appt.doctor
       end 
     end 
     drArr 
