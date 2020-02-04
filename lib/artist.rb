@@ -19,6 +19,7 @@ class Artist
   end
   def genres 
     songs.select do |song|
-    #collect all genres 
+    #collect all genres
+    end 
   end 
 end 
