@@ -12,8 +12,8 @@ class Artist
     made_song = Song.new(name, self, genre)
   end 
   def songs 
-    Song.all.select  do |song|
-      song.artist = self 
+    Song.all.select  do |item|
+      item.artist == self 
     end 
   end
   def genres 
