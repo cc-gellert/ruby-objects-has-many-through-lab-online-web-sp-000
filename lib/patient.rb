@@ -18,8 +18,8 @@ class Patient
   end 
   def doctors
     drArr = [] 
-    appointments.each do |dr| 
-      if !(drArr.include?(dr))
+    appointments.each do |appt| 
+      if !(drArr.include?(appt.doctor))
         drArr << dr 
       end 
     end 
