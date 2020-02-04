@@ -18,7 +18,7 @@ class Doctor
   end 
   def patients 
     patients = [] 
-    appointments.all.each do |appt|
+    appointments.each do |appt|
       if !(patients.include?(appt.patient))
         patients << appt.patiend 
       end 
