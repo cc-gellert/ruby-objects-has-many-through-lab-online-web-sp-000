@@ -18,8 +18,12 @@ class Artist
     end 
   end
   def genres 
+    genres = [] 
     songs.select do |song|
-    #collect all genres
+      if !(genres.include?(song.genre))
+        genres << song.genre 
+      end 
     end 
+    genres 
   end 
 end 
